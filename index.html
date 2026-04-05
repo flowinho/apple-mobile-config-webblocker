@@ -42,6 +42,55 @@
       </header>
 
       <main class="layout">
+        <section class="card info-card" aria-labelledby="notes-title">
+          <div class="section-heading">
+            <p class="section-kicker">Hinweise</p>
+            <h2 id="notes-title">Transparenz und Installation</h2>
+          </div>
+          <div class="info-grid">
+            <article class="info-panel">
+              <h3>Lokale Verarbeitung</h3>
+              <p>
+                Alle Verarbeitungsschritte laufen ausschließlich in Ihrem
+                Browser. Es werden keine Eingaben an einen Server oder an eine
+                externe API gesendet.
+              </p>
+            </article>
+            <article class="info-panel">
+              <h3>Apple-Kontext</h3>
+              <p>
+                Die App erzeugt einen standardnahen Generator für ein
+                Apple-Konfigurationsprofil mit Web-Content-Filter-Payload. Ob
+                die Sperren auf einem iPhone tatsächlich durchgesetzt werden,
+                hängt vom unterstützten Verwaltungs- und
+                Enrollment-Kontext des Zielgeräts ab. Die referenzierte
+                Payload-Dokumentation beschreibt den Built-In-Filter
+                insbesondere für überwachte Geräte.
+              </p>
+            </article>
+            <article class="info-panel">
+              <h3>Installation</h3>
+              <p>
+                Profil herunterladen, auf dem iPhone öffnen und die
+                Installation prüfen. Anschließend unter
+                <strong>Einstellungen &gt; Allgemein &gt; VPN &amp; Geräteverwaltung</strong>
+                nachsehen, ob das Profil erkannt wurde. Eine erfolgreiche
+                Installation bedeutet nicht automatisch, dass die Sperrwirkung
+                in jedem privaten Szenario erzwungen wird.
+              </p>
+            </article>
+            <article class="info-panel">
+              <h3>Entfernung</h3>
+              <p>
+                Nach dem Entfernen des Profils sollen die gesetzten
+                Einschränkungen wieder entfallen. Das ist als praktischer
+                Hinweis zu verstehen, nicht als Garantie für jede iPhone- oder
+                Verwaltungsumgebung.
+              </p>
+            </article>
+          </div>
+        </section>
+
         <section class="card form-card" aria-labelledby="generator-title">
           <div class="section-heading">
             <p class="section-kicker">Generator</p>
@@ -120,51 +169,6 @@
               </button>
             </div>
           </form>
-        </section>
-
-        <section class="card info-card" aria-labelledby="notes-title">
-          <div class="section-heading">
-            <p class="section-kicker">Hinweise</p>
-            <h2 id="notes-title">Transparenz und Installation</h2>
-          </div>
-          <div class="info-grid">
-            <article class="info-panel">
-              <h3>Lokale Verarbeitung</h3>
-              <p>
-                Alle Verarbeitungsschritte laufen ausschließlich in Ihrem
-                Browser. Es werden keine Eingaben an einen Server oder an eine
-                externe API gesendet.
-              </p>
-            </article>
-            <article class="info-panel">
-              <h3>Apple-Kontext</h3>
-              <p>
-                Die App erzeugt einen standardnahen Generator für ein
-                Apple-Konfigurationsprofil mit Web-Content-Filter-Payload. Ob
-                die Sperren auf einem iPhone tatsächlich durchgesetzt werden,
-                hängt vom unterstützten Verwaltungs- und
-                Enrollment-Kontext des Zielgeräts ab.
-              </p>
-            </article>
-            <article class="info-panel">
-              <h3>Installation</h3>
-              <p>
-                Profil herunterladen, auf dem iPhone öffnen und die
-                Installation prüfen. Anschließend unter
-                <strong>Einstellungen &gt; Allgemein &gt; VPN &amp; Geräteverwaltung</strong>
-                nachsehen, ob das Profil erkannt wurde.
-              </p>
-            </article>
-            <article class="info-panel">
-              <h3>Entfernung</h3>
-              <p>
-                Nach dem Entfernen des Profils sollen die gesetzten
-                Einschränkungen wieder entfallen. Das ist als praktischer
-                Hinweis zu verstehen, nicht als Garantie für jede iPhone- oder
-                Verwaltungsumgebung.
-              </p>
-            </article>
-          </div>
         </section>
 
         <section class="card" aria-labelledby="summary-title">

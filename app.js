@@ -5,7 +5,7 @@
     profileName: "Web Blocklist",
     organization: "Lokaler Generator",
     description:
-      "Blockiert ausgewählte Websites über einen Web-Content-Filter-Payload."
+      "Blockiert ausgewählte Websites über einen Web-Content-Filter-Payload für überwachte oder passend verwaltete Apple-Geräte."
   };
 
   const exampleUrls = [
@@ -309,12 +309,7 @@
     const identifierBase = createIdentifier(metadata.profileName);
     const deniedArray = deniedUrls
       .map(function (entry) {
-        return [
-          "        <dict>",
-          "          <key>URL</key>",
-          "          <string>" + xmlEscape(entry) + "</string>",
-          "        </dict>"
-        ].join("\n");
+        return "        <string>" + xmlEscape(entry) + "</string>";
       })
       .join("\n");
 
