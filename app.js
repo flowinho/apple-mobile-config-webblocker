@@ -5,7 +5,7 @@
     profileName: "Web Blocklist",
     organization: "Lokaler Generator",
     description:
-      "Blockiert ausgewählte Websites über einen Web-Content-Filter-Payload für überwachte oder passend verwaltete Apple-Geräte."
+      "Blockiert ausgewählte Websites über einen Web-Content-Filter-Payload für betreute oder passend verwaltete Apple-Geräte."
   };
 
   const exampleUrls = [
@@ -303,6 +303,7 @@
   function buildMobileconfigXml(metadata, deniedUrls) {
     const rootUuid = generateUuid();
     const payloadUuid = generateUuid();
+    const contentFilterUuid = generateUuid();
     const safeProfileName = xmlEscape(metadata.profileName);
     const safeDescription = xmlEscape(metadata.description);
     const safeOrganization = xmlEscape(metadata.organization);
@@ -337,7 +338,9 @@
       "      <string>" + safeOrganization + "</string>",
       "      <key>FilterType</key>",
       "      <string>BuiltIn</string>",
-      "      <key>BlacklistedURLs</key>",
+      "      <key>ContentFilterUUID</key>",
+      "      <string>" + contentFilterUuid + "</string>",
+      "      <key>DenyListURLs</key>",
       "      <array>",
       deniedArray,
       "      </array>",

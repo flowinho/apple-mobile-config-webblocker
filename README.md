@@ -25,6 +25,7 @@ Geeignet sind einfache statische Hosts, zum Beispiel GitHub Pages, Netlify oder 
 - Alle Daten bleiben lokal im Browser des Besuchers.
 - Es findet keine Server-Kommunikation und kein externer API-Aufruf statt.
 - Die App erzeugt einen standardnahen Generator für ein Apple-Konfigurationsprofil mit Web-Content-Filter-Payload.
-- Ob die Sperren auf einem iPhone tatsächlich greifen, hängt vom Apple-Verwaltungs-, Enrollment- und Installationskontext des Zielgeräts ab. Die referenzierte Payload-Dokumentation beschreibt den Built-In-Filter insbesondere für überwachte Geräte.
+- Ob die Sperren auf einem iPhone tatsächlich greifen, hängt vom Apple-Verwaltungs-, Enrollment- und Installationskontext des Zielgeräts ab. Die referenzierte Payload-Dokumentation beschreibt den Built-In-Filter insbesondere für betreute Geräte.
 - Eine manuelle Profilinstallation auf dem iPhone kann möglich sein, aber nicht jeder Payload ist in jedem privaten oder unverwalteten Szenario garantiert wirksam.
+- Wenn iOS auf nicht betreuten Geräten eine Inhaltsfilter-UUID verlangt, deutet das auf einen Plug-in-basierten, app-gebundenen Filterpfad hin und nicht auf eine einfache Built-In-Blockliste.
 - Nach Entfernung des Profils sollen die Einschränkungen wieder entfallen; auch das ist als vorsichtiger Hinweis zu verstehen, nicht als universelle Garantie.

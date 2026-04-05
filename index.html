@@ -22,6 +22,13 @@
             <code>com.apple.webcontent-filter</code>-Payload. Alle Eingaben
             bleiben lokal auf diesem Gerät.
           </p>
+          <p class="hero-text">
+            Wichtig: Der eingebaute Web-Content-Filter für URL-Sperrlisten ist
+            auf iPhone und iPad laut Apple primär für betreute, per
+            Geräteverwaltung verwaltete Geräte vorgesehen. Ein manuell
+            installiertes Profil auf einem privaten iPhone ist daher nicht als
+            allgemein funktionsfähiges Ziel zu verstehen.
+          </p>
           <div class="hero-chips" aria-label="Wichtige Hinweise">
             <span class="chip">Keine Server-Kommunikation</span>
             <span class="chip">Download direkt im Browser</span>
@@ -65,7 +72,7 @@
                 hängt vom unterstützten Verwaltungs- und
                 Enrollment-Kontext des Zielgeräts ab. Die referenzierte
                 Payload-Dokumentation beschreibt den Built-In-Filter
-                insbesondere für überwachte Geräte.
+                insbesondere für betreute Geräte.
               </p>
             </article>
             <article class="info-panel">
@@ -77,6 +84,16 @@
                 nachsehen, ob das Profil erkannt wurde. Eine erfolgreiche
                 Installation bedeutet nicht automatisch, dass die Sperrwirkung
                 in jedem privaten Szenario erzwungen wird.
+              </p>
+            </article>
+            <article class="info-panel">
+              <h3>Nicht betreute Geräte</h3>
+              <p>
+                Wenn iOS bei der Installation eine
+                Inhaltsfilter-UUID verlangt, ist das ein Hinweis darauf, dass
+                das Gerät diesen Anwendungsfall nicht als einfachen Built-In-
+                Blocklistenfilter akzeptiert. Dafür wäre typischerweise ein
+                verwalteter Plug-in-Filter mit passender App-Anbindung nötig.
               </p>
             </article>
             <article class="info-panel">
